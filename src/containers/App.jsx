@@ -33,28 +33,23 @@ const App = () => {
 
     <div className="w-full flex flex-col items-center justify-start mb-15">
       <p className="text-3xl tracking-wide text-texlight">Mounika Yellapragada</p>
-      <div className="flex items-center justify-center gap-16 mt-16">
-      <AnimatePresence>
-              {Socials && Socials.map((item, index) => (
-                <HomeSocialLinks key={index} data={item} index={index} />
-              ))}
-            </AnimatePresence>
-      </div>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-3 mt-12 gap-4 mb-[40px]">
-        <p className="text-texlight text-center">
+      
+      <div className="w-full grid grid-cols-1  mt-[12px] gap-4 mb-[40px]">
+        {/* <p className="text-texlight text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id nostrum sunt, ratione ex expedita incidunt, alias nobis praesentium debitis asperiores error et nulla quae beatae repellendus quas porro animi.
         </p>
         <p className="text-texlight text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi id nostrum sunt, ratione ex expedita incidunt, alias nobis praesentium debitis asperiores error et nulla quae beatae repellendus quas porro animi.
-        </p>
+        </p> */}
         <div className="w-full flex flex-col items-center justify-center gap-3">
           <p className="text-texlight text-center">
             mounikayellapragada19@gmail.com
           </p>
           <p className="text-texlight text-center">+1(416)-471-6828</p>
-          <a href="#">
+ 
+          {/* <a href="#">
             <p className="text-primary text-center">Hire Me</p>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

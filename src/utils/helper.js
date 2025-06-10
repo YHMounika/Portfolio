@@ -5,6 +5,8 @@ import {
   FaGithub,
   FaHouse,
   FaLinkedinIn,
+  FaBlog,
+  FaFilePdf,
   FaRenren,
   FaUser,
   FaYoutube,
@@ -19,31 +21,38 @@ import {
   PortfolioFirebase,
   RestaurantClone,
   SocialMedia,
+  SuchitraIndustries
 } from "../assets";
 
 export const Socials = [
-  {
-    id: `facebook-${Date.now()}`,
-    Icon: FaFacebookF,
-    uri: "",
-    color: "#1877F2",
-  },
+  // {
+  //   id: `facebook-${Date.now()}`,
+  //   Icon: FaFacebookF,
+  //   uri: "",
+  //   color: "#1877F2",
+  // },
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
-    uri: "",
+    uri: "https://www.linkedin.com/in/harimounika/",
     color: "#0072b1",
   },
   {
     id: `github-${Date.now()}`,
     Icon: FaGithub,
-    uri: "",
+    uri: "https://github.com/YHMounika",
     color: "#fff",
   },
   {
-    id: `youtube-${Date.now()}`,
-    Icon: FaYoutube,
-    uri: "",
+    id: `resume-${Date.now()}`,
+    Icon: FaFilePdf,
+    uri: "/Yellapragada Hari Mounika_Resume.pdf",
+    color: "#ff0000",
+  },
+  {
+    id: `blog-${Date.now()}`,
+    Icon: FaBlog,
+    uri: "https://hashnode.com/68434d181c65461d127042ed/dashboard/posts",
     color: "#ff0000",
   },
 ];
@@ -81,7 +90,17 @@ export const Menus = [
   },
 ];
 
+
 export const ProjectsData = [
+  {
+    id: `food-${Date.now()}`,
+    name: "Suchitra Foods",
+    imgSrc: SuchitraIndustries,
+    gitURL: "https://github.com/AvinashMudunuri/SuchitraFoods",
+  },
+]
+
+export const ProjectsData_old = [
   {
     id: `food-${Date.now()}`,
     name: "Single Food Restaurant",

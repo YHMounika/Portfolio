@@ -42,13 +42,15 @@ const ProjectCard = ({ project }) => {
     className="overflow-hidden cursor-pointer relative rounded-md"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
+
       <motion.img className="w-full h-full object-contain rounded-lg" 
       src={project.imgSrc}
       whileHover={{ scale: 1.1}}>
       </motion.img  >
+
       {isHovered && (<motion.div className="absolute inset-0 backdrop-blur-md bg-[rgba(0,0,0,0.6) flex items-center justify-center flex-col gap-2">
-        <p>{project?.name}</p>
-        <a href={project?.gitUrl} className="">
+        <p className="text-xl text-primary">{project?.name}</p>
+        <a href={project?.gitURL} target="_blank" className="">
           <FaGithub className="text-3xl text-white hover:text-primary"/>
         </a>
       </motion.div>)}
